@@ -1,0 +1,29 @@
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="cpp_proposal__item-article" itemscope itemtype="https://schema.org/CreativeWork">
+    <h4><a href="https://wg21.link/{{ proposal.status }}{{ proposal.number }}">
+      {{ proposal.status | capitalize }}{{ proposal.number }}: {{ proposal.title | markdownify | remove: "<p>" | remove: "</p>" }}
+    </a></h4>
+    <p>
+     <i>Authors: </i> {{ proposal.authors | array_to_sentence_string | replace: "D. S. Hollman", "<b><u>D. S. Hollman</u></b>" }}
+    </p>
+    <p>
+     <i>Latest Revision: </i> R{{ proposal.revisions[0].number }}
+    </p>
+    {% if proposal.revisions | size > 1 %}
+      {% capture all_revisions %}
+        {% for revision in proposal.revisions | shift %}
+            {% if revision.date %}
+              <a href="https://wg21.link/{{ proposal.status }}{{ proposal.number }}r{{ revision.number }}">R{{ revision.number }}</a>&nbsp;({{ revision.date | date: "%Y-%m" }})SPLIT_HERE
+              {% else %}
+              <a href="https://wg21.link/{{ proposal.status }}{{ proposal.number }}r{{ revision.number }}">R{{ revision.number }}</a>SPLIT_HERE
+            {% endif %}
+        {% endfor %}
+      {% endcapture %}
+      <p><i>All revisions that I've been involved in: </i>
+        {{ all_revisions | strip_newlines | split: "SPLIT_HERE" | pop | array_to_sentence_string }}
+
+      </p>
+    {% endif %}
+  </article>
+</div>
