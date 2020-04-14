@@ -31,6 +31,7 @@ url: "https://www.dsh.fyi"
 baseurl: # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username: dhollman
+destination: ./docs
 
 #================================================================================
 # Build settings
