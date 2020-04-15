@@ -110,7 +110,7 @@ analytics:
 author:
   name: *fullname
   location: Livermore, California
-  avatar: "/assets/images/profile_small.jpg"
+  #avatar: "/assets/images/profile_small.jpg"
   bio: >-
     C++ Committee Member, scientist, programming models researcher.
     Woman in HPC.  Opinionated, but opinions are my own and don't represent
