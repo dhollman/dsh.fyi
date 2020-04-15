@@ -1,1 +1,1 @@
-Sitemap: https://dsh.fyi/pages/dhollman/dsh.fyi/sitemap.xml
+Sitemap: https://dsh.fyi/sitemap.xml
