@@ -27,7 +27,7 @@ email: web@dsh.fyi
 description: >- # this means to ignore newlines until "baseurl:"
   The personal and professional website of Dr. Daisy Sophia Hollman, Ph. D.  All
   opinions expressed here are my own and do not represent my employer.
-url: "https://www.dsh.fyi"
+url: "https://dsh.fyi"
 baseurl: # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username: dhollman
@@ -110,7 +110,7 @@ analytics:
 author:
   name: *fullname
   location: Livermore, California
-  #avatar: "/assets/images/profile_small.jpg"
+  avatar: "/assets/images/profile_small.jpg"
   bio: >-
     C++ Committee Member, scientist, programming models researcher.
     Woman in HPC.  Opinionated, but opinions are my own and don't represent
