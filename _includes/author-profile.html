@@ -7,7 +7,7 @@
 
   {% if author.avatar %}
     <div class="author__avatar">
-      <img src="{{ author.avatar |  relative_url }}" class="author__avatar" alt="{{ author.name }}">
+      <img src="{{ author.avatar |  relative_url }}" style="object-fit: cover" class="author__avatar" alt="{{ author.name }}" itemprop="image">
     </div>
   {% endif %}
 

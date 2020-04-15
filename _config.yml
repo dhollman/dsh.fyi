@@ -110,15 +110,12 @@ analytics:
 author:
   name: *fullname
   location: Livermore, California
-  avatar: "/assets/images/profile_small.jpg"
-  bio:
-      bullets:
-          - "C++ Committee Member"
-          - "Scientist"
-          - "Programming Models"
-          - "Opinionated"
-          - "Woman in HPC"
-          - "Trans"
+  #avatar: "/assets/images/profile_small.jpg"
+  bio: >-
+    C++ Committee Member, scientist, programming models researcher.
+    Woman in HPC.  Opinionated, but opinions are my own and don't represent
+    my employer. Oh, and I happen to be trans.
+
   employer: Sandia National Labs
   github: dhollman
   googlescholar: "https://scholar.google.com/citations?hl=en&authuser=1&user=NCfA-poAAAAJ"
