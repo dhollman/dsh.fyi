@@ -244,16 +244,16 @@ sass:
 
 #================================================================================
 # Outputting
-# permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 timezone: America/Los_Angeles
 breadcrumbs: true
 
 #================================================================================
 # Plugins (previously gems:)
-#  - jekyll-paginate
 plugins:
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -261,8 +261,8 @@ plugins:
 
 
 # mimic GitHub Pages with --safe
-#  - jekyll-paginate
 whitelist:
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
