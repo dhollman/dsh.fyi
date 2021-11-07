@@ -111,22 +111,22 @@ analytics:
 
 #================================================================================
 # Site Author
+# stackoverflow: "152060/daisy-sophia-hollman"
 author:
   name: *fullname
-  location: Livermore, California
+  location: San Francisco, California
   #avatar: "/assets/images/profile_small.jpg"
   bio: >-
-    C++ Committee Member, scientist, programming models researcher.
-    Woman in HPC.  Opinionated, but opinions are my own and don't represent
-    my employer.
+    Making programming languages more accessible, one line at a time.
+    Woman (who happens to be trans), C++ committee member, frequent lecturer, and purveyor of cute C++ tricks.
+    Opinionated, but opinions are my own and don't represent my employer.
 
-  employer: Sandia National Labs
+  employer: Google
   github: *github
   googlescholar: "https://scholar.google.com/citations?hl=en&authuser=1&user=NCfA-poAAAAJ"
   twitter: *twitter
   email: web@dsh.fyi
   linkedin: daisy-sophia-hollman-40a64225
-  stackoverflow: "152060/daisy-sophia-hollman"
   facebook: TheWholeDaisy
   links:
     - label: "Email"
@@ -245,15 +245,15 @@ sass:
 #================================================================================
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: America/Los_Angeles
 breadcrumbs: true
 
 #================================================================================
 # Plugins (previously gems:)
+#  - jekyll-paginate
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -261,8 +261,8 @@ plugins:
 
 
 # mimic GitHub Pages with --safe
+#  - jekyll-paginate
 whitelist:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
