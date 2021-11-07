@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -21,23 +21,27 @@
 #--------------------------------------------------------------------------------
 # Site settings
 
-title: The Whole Daisy
+title: dsh.fyi
 subtitle: Dr. Daisy Sophia Hollman, Ph. D.
 email: web@dsh.fyi
 description: >- # this means to ignore newlines until "baseurl:"
-  The personal and professional website of Dr. Daisy Sophia Hollman, Ph. D.  All
+  The personal and professional website of Dr. Daisy Sophia Hollman, Ph. D. All
   opinions expressed here are my own and do not represent my employer.
 url: "https://dsh.fyi"
 baseurl: # the subpath of your site, e.g. /blog
 twitter_username: &twitter The_Whole_Daisy
 github_username: &github dhollman
-destination: ./docs
+# destination: ./docs
 
 #================================================================================
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-archives
+
+#================================================================================
+# Serve settings
+port: 8000
 
 #================================================================================
 # Theme settings
@@ -93,7 +97,7 @@ collections:
   talks:
     permalink: "/:collection/:path/"
     output: false
-  
+
 
 
 #================================================================================
@@ -240,16 +244,16 @@ sass:
 
 #================================================================================
 # Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: America/Los_Angeles
 breadcrumbs: true
 
 #================================================================================
 # Plugins (previously gems:)
+#  - jekyll-paginate
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -257,8 +261,8 @@ plugins:
 
 
 # mimic GitHub Pages with --safe
+#  - jekyll-paginate
 whitelist:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -308,7 +312,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
